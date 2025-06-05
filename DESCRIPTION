@@ -1,0 +1,48 @@
+Package: rgeospatialshiny
+Title: R Geospatial Shiny App for Interactive Spatial Data Analysis
+Version: 0.1.0
+Authors@R: 
+    person("Gabriel", "Demetrios Lafis", email = "gabriel.lafis@example.com", role = c("aut", "cre"))
+Description: An interactive Shiny application for geospatial data analysis and visualization.
+    The package provides tools for loading, processing, analyzing, and visualizing spatial data
+    with a focus on interactive maps, spatial statistics, and geoprocessing operations.
+    Features include choropleth maps, point pattern analysis, spatial autocorrelation,
+    and custom spatial queries through an intuitive user interface.
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.3
+Imports:
+    shiny,
+    shinydashboard,
+    leaflet,
+    sf,
+    sp,
+    raster,
+    dplyr,
+    ggplot2,
+    plotly,
+    DT,
+    rgdal,
+    spdep,
+    spatstat,
+    tmap,
+    tmaptools,
+    mapview,
+    RColorBrewer,
+    htmltools,
+    magrittr,
+    tidyr,
+    stringr,
+    readr
+Suggests:
+    testthat (>= 3.0.0),
+    knitr,
+    rmarkdown,
+    covr
+Config/testthat/edition: 3
+VignetteBuilder: knitr
+Depends: 
+    R (>= 3.5.0)
+
