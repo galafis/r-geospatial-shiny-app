@@ -10,3 +10,6 @@ rsconnect/
 *.log
 .DS_Store
 Thumbs.db
+
+
+images/hero_image.png

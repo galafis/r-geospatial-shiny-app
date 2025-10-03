@@ -15,6 +15,14 @@
 
 ---
 
+## 🖼️ Imagem Hero | Hero Image
+
+<div align="center">
+  <img src="images/hero_image.png" alt="Imagem Hero da Aplicação Geoespacial" width="800"/>
+</div>
+
+---
+
 ## 🇧🇷 Português
 
 ### 🗺️ Visão Geral
@@ -35,89 +43,89 @@ Aplicação **geoespacial interativa** desenvolvida em R e Shiny, oferecendo fer
 - **Facilitar tomada de decisão** baseada em localização
 - **Educar usuários** em conceitos de GIS
 
-### 🛠️ Stack Tecnológico
+### 🛠️ Stack Tecnológico | Tech Stack
 
-#### Análise Geoespacial
-- **sf**: Geometrias simples e operações espaciais
-- **sp**: Pacote clássico para dados espaciais
-- **raster**: Análise de dados raster
-- **terra**: Sucessor moderno do raster
-- **stars**: Arrays espaço-temporais
+#### Análise Geoespacial | Geospatial Analysis
+- **sf**: Geometrias simples e operações espaciais | Simple features and spatial operations
+- **sp**: Pacote clássico para dados espaciais | Classic package for spatial data
+- **raster**: Análise de dados raster | Raster data analysis
+- **terra**: Sucessor moderno do raster | Modern successor to raster
+- **stars**: Arrays espaço-temporais | Spatio-temporal arrays
 
-#### Visualização de Mapas
-- **leaflet**: Mapas interativos web
-- **leaflet.extras**: Extensões para leaflet
-- **mapview**: Visualização rápida de dados espaciais
-- **tmap**: Mapas temáticos
-- **ggplot2**: Mapas estáticos com geom_sf
+#### Visualização de Mapas | Map Visualization
+- **leaflet**: Mapas interativos web | Interactive web maps
+- **leaflet.extras**: Extensões para leaflet | Extensions for leaflet
+- **mapview**: Visualização rápida de dados espaciais | Quick spatial data visualization
+- **tmap**: Mapas temáticos | Thematic maps
+- **ggplot2**: Mapas estáticos com geom_sf | Static maps with geom_sf
 
-#### Interface Web
-- **shiny**: Framework web interativo
-- **shinydashboard**: Interface de dashboard
-- **shinyWidgets**: Widgets avançados
-- **DT**: Tabelas interativas
+#### Interface Web | Web Interface
+- **shiny**: Framework web interativo | Interactive web framework
+- **shinydashboard**: Interface de dashboard | Dashboard interface
+- **shinyWidgets**: Widgets avançados | Advanced widgets
+- **DT**: Tabelas interativas | Interactive tables
 
-#### Dados Geográficos
-- **osmdata**: Dados do OpenStreetMap
-- **rnaturalearth**: Dados geográficos naturais
-- **geobr**: Dados geográficos do Brasil
-- **tidygeocoder**: Geocodificação de endereços
+#### Dados Geográficos | Geographic Data
+- **osmdata**: Dados do OpenStreetMap | OpenStreetMap data
+- **rnaturalearth**: Dados geográficos naturais | Natural Earth geographic data
+- **geobr**: Dados geográficos do Brasil | Brazilian geographic data
+- **tidygeocoder**: Geocodificação de endereços | Address geocoding
 
-#### Análise Estatística Espacial
-- **spdep**: Dependência espacial
-- **spatstat**: Análise de padrões pontuais
-- **gstat**: Geoestatística e interpolação
-- **automap**: Kriging automático
+#### Análise Estatística Espacial | Spatial Statistical Analysis
+- **spdep**: Dependência espacial | Spatial dependence
+- **spatstat**: Análise de padrões pontuais | Point pattern analysis
+- **gstat**: Geoestatística e interpolação | Geostatistics and interpolation
+- **automap**: Kriging automático | Automatic Kriging
 
-### 📋 Estrutura da Aplicação
+### 📋 Estrutura da Aplicação | Application Structure
 
 ```
 r-geospatial-shiny-app/
-├── 📄 app.R                       # Aplicação Shiny principal
-├── 📁 modules/                    # Módulos Shiny organizados
-│   ├── 📄 map_module.R           # Módulo de mapas
-│   ├── 📄 data_upload_module.R   # Módulo upload de dados
-│   ├── 📄 spatial_analysis_module.R # Módulo análise espacial
-│   ├── 📄 visualization_module.R  # Módulo visualização
-│   └── 📄 export_module.R        # Módulo exportação
-├── 📁 R/                         # Funções de análise
-│   ├── 📄 spatial_functions.R    # Funções espaciais
-│   ├── 📄 mapping_functions.R    # Funções de mapeamento
-│   ├── 📄 analysis_functions.R   # Funções de análise
-│   ├── 📄 geocoding_functions.R  # Funções de geocodificação
-│   └── 📄 data_processing.R      # Processamento de dados
-├── 📁 data/                      # Dados geográficos
-│   ├── 📁 shapefiles/           # Arquivos shapefile
-│   ├── 📁 raster/               # Dados raster
-│   ├── 📁 csv/                  # Dados tabulares com coordenadas
-│   └── 📁 geojson/              # Arquivos GeoJSON
-├── 📁 examples/                  # Exemplos de uso
-│   ├── 📄 demographic_analysis.R # Análise demográfica
-│   ├── 📄 environmental_study.R  # Estudo ambiental
-│   ├── 📄 urban_planning.R       # Planejamento urbano
-│   └── 📄 epidemiological_mapping.R # Mapeamento epidemiológico
-├── 📁 reports/                   # Templates de relatórios
-│   ├── 📄 spatial_report.Rmd    # Relatório espacial
-│   ├── 📄 map_book.Rmd          # Atlas de mapas
-│   └── 📄 analysis_summary.Rmd  # Resumo de análises
-├── 📁 www/                       # Recursos web
-│   ├── 📄 custom.css            # Estilos customizados
-│   ├── 📄 leaflet_custom.js     # JavaScript customizado
-│   └── 📁 icons/                # Ícones para mapas
-├── 📁 tests/                     # Testes
-│   ├── 📄 test_spatial_functions.R # Testes funções espaciais
-│   └── 📄 test_mapping.R        # Testes mapeamento
-├── 📄 README.md                 # Este arquivo
-├── 📄 LICENSE                   # Licença MIT
-├── 📄 .gitignore               # Arquivos ignorados
-└── 📄 renv.lock                # Controle de dependências
+├── 📄 app.R                       # Aplicação Shiny principal | Main Shiny application
+├── 📁 modules/                    # Módulos Shiny organizados | Organized Shiny modules
+│   ├── 📄 map_module.R           # Módulo de mapas | Map module
+│   ├── 📄 data_upload_module.R   # Módulo upload de dados | Data upload module
+│   ├── 📄 spatial_analysis_module.R # Módulo análise espacial | Spatial analysis module
+│   ├── 📄 visualization_module.R  # Módulo visualização | Visualization module
+│   └── 📄 export_module.R        # Módulo exportação | Export module
+├── 📁 R/                         # Funções de análise | Analysis functions
+│   ├── 📄 spatial_functions.R    # Funções espaciais | Spatial functions
+│   ├── 📄 mapping_functions.R    # Funções de mapeamento | Mapping functions
+│   ├── 📄 analysis_functions.R   # Funções de análise | Analysis functions
+│   ├── 📄 geocoding_functions.R  # Funções de geocodificação | Geocoding functions
+│   └── 📄 data_processing.R      # Processamento de dados | Data processing
+├── 📁 data/                      # Dados geográficos | Geographic data
+│   ├── 📁 shapefiles/           # Arquivos shapefile | Shapefiles
+│   ├── 📁 raster/               # Dados raster | Raster data
+│   ├── 📁 csv/                  # Dados tabulares com coordenadas | Tabular data with coordinates
+│   └── 📁 geojson/              # Arquivos GeoJSON | GeoJSON files
+├── 📁 examples/                  # Exemplos de uso | Usage examples
+│   ├── 📄 demographic_analysis.R # Análise demográfica | Demographic analysis
+│   ├── 📄 environmental_study.R  # Estudo ambiental | Environmental study
+│   ├── 📄 urban_planning.R       # Planejamento urbano | Urban planning
+│   └── 📄 epidemiological_mapping.R # Mapeamento epidemiológico | Epidemiological mapping
+├── 📁 reports/                   # Templates de relatórios | Report templates
+│   ├── 📄 spatial_report.Rmd    # Relatório espacial | Spatial report
+│   ├── 📄 map_book.Rmd          # Atlas de mapas | Map atlas
+│   └── 📄 analysis_summary.Rmd  # Resumo de análises | Analysis summary
+├── 📁 www/                       # Recursos web | Web resources
+│   ├── 📄 custom.css            # Estilos customizados | Custom styles
+│   ├── 📄 leaflet_custom.js     # JavaScript customizado | Custom JavaScript
+│   └── 📁 icons/                # Ícones para mapas | Icons for maps
+├── 📁 tests/                     # Testes | Tests
+│   ├── 📄 test_spatial_functions.R # Testes funções espaciais | Spatial functions tests
+│   └── 📄 test_mapping.R        # Testes mapeamento | Mapping tests
+├── 📄 README.md                 # Este arquivo | This file
+├── 📄 LICENSE                   # Licença MIT | MIT License
+├── 📄 .gitignore               # Arquivos ignorados | Ignored files
+└── 📄 renv.lock                # Controle de dependências | Dependency control
 ```
 
-### 🗺️ Funcionalidades Principais
+### 🗺️ Funcionalidades Principais | Main Features
 
-#### 🌍 Mapas Interativos
+#### 🌍 Mapas Interativos | Interactive Maps
 
-**Visualização Base**
+**Visualização Base | Base Visualization**
 ```r
 # Criar mapa base interativo
 create_base_map <- function(center_lat = -15.7801, center_lng = -47.9292, zoom = 4) {
@@ -134,7 +142,7 @@ create_base_map <- function(center_lat = -15.7801, center_lng = -47.9292, zoom =
 }
 ```
 
-**Mapas Coropléticos**
+**Mapas Coropléticos | Choropleth Maps**
 ```r
 # Criar mapa coroplético
 create_choropleth_map <- function(spatial_data, variable, palette = "viridis") {
@@ -186,11 +194,11 @@ create_choropleth_map <- function(spatial_data, variable, palette = "viridis") {
 }
 ```
 
-#### 📊 Análise Espacial
+#### 📊 Análise Espacial | Spatial Analysis
 
-**Autocorrelação Espacial**
+**Autocorrelação Espacial | Spatial Autocorrelation**
 ```r
-# Análise de autocorrelação espacial (Moran's I)
+# Análise de autocorrelação espacial (Moran\'s I)
 spatial_autocorrelation <- function(spatial_data, variable, weight_type = "queen") {
   library(spdep)
   
@@ -204,10 +212,10 @@ spatial_autocorrelation <- function(spatial_data, variable, weight_type = "queen
   # Criar pesos espaciais
   weights <- nb2listw(neighbors, style = "W", zero.policy = TRUE)
   
-  # Calcular Moran's I
+  # Calcular Moran\'s I
   moran_test <- moran.test(spatial_data[[variable]], weights)
   
-  # Moran's I local (LISA)
+  # Moran\'s I local (LISA)
   local_moran <- localmoran(spatial_data[[variable]], weights)
   
   # Adicionar resultados aos dados
@@ -223,7 +231,7 @@ spatial_autocorrelation <- function(spatial_data, variable, weight_type = "queen
 }
 ```
 
-**Análise de Clusters Espaciais**
+**Análise de Clusters Espaciais | Spatial Cluster Analysis**
 ```r
 # Detecção de clusters espaciais
 spatial_clustering <- function(point_data, method = "dbscan", eps = 1000, minPts = 5) {
@@ -261,9 +269,9 @@ spatial_clustering <- function(point_data, method = "dbscan", eps = 1000, minPts
 }
 ```
 
-#### 🌡️ Interpolação Espacial
+#### 🌡️ Interpolação Espacial | Spatial Interpolation
 
-**Kriging Ordinário**
+**Kriging Ordinário | Ordinary Kriging**
 ```r
 # Interpolação por kriging
 spatial_interpolation <- function(point_data, variable, grid_resolution = 1000) {
@@ -301,9 +309,9 @@ spatial_interpolation <- function(point_data, variable, grid_resolution = 1000) 
 }
 ```
 
-#### 📍 Geocodificação
+#### 📍 Geocodificação | Geocoding
 
-**Geocodificação de Endereços**
+**Geocodificação de Endereços | Address Geocoding**
 ```r
 # Geocodificar endereços
 geocode_addresses <- function(addresses, method = "osm") {
@@ -329,11 +337,11 @@ geocode_addresses <- function(addresses, method = "osm") {
 }
 ```
 
-### 🌍 Casos de Uso Práticos
+### 🌍 Casos de Uso Práticos | Practical Use Cases
 
-#### 1. 🏙️ Planejamento Urbano
+#### 1. 🏙️ Planejamento Urbano | Urban Planning
 
-**Análise de Densidade Populacional**
+**Análise de Densidade Populacional | Population Density Analysis**
 ```r
 # Análise de densidade e serviços urbanos
 urban_analysis <- function(population_data, services_data, city_boundaries) {
@@ -360,9 +368,9 @@ urban_analysis <- function(population_data, services_data, city_boundaries) {
 }
 ```
 
-#### 2. 🌱 Análise Ambiental
+#### 2. 🌱 Análise Ambiental | Environmental Analysis
 
-**Monitoramento de Desmatamento**
+**Monitoramento de Desmatamento | Deforestation Monitoring**
 ```r
 # Análise de mudanças na cobertura vegetal
 deforestation_analysis <- function(forest_2020, forest_2024) {
@@ -386,9 +394,9 @@ deforestation_analysis <- function(forest_2020, forest_2024) {
 }
 ```
 
-#### 3. 🏥 Epidemiologia Espacial
+#### 3. 🏥 Epidemiologia Espacial | Spatial Epidemiology
 
-**Análise de Distribuição de Doenças**
+**Análise de Distribuição de Doenças | Disease Distribution Analysis**
 ```r
 # Análise epidemiológica espacial
 epidemiological_analysis <- function(disease_cases, population_data) {
@@ -420,9 +428,9 @@ epidemiological_analysis <- function(disease_cases, population_data) {
 }
 ```
 
-### 📊 Visualizações Avançadas
+### 📊 Visualizações Avançadas | Advanced Visualizations
 
-#### 🔥 Mapas de Calor (Heatmaps)
+#### 🔥 Mapas de Calor (Heatmaps) | Heatmaps
 ```r
 # Criar mapa de calor de densidade
 create_heatmap <- function(point_data, radius = 20, blur = 15) {
@@ -444,7 +452,7 @@ create_heatmap <- function(point_data, radius = 20, blur = 15) {
 }
 ```
 
-#### 📈 Mapas 3D
+#### 📈 Mapas 3D | 3D Maps
 ```r
 # Visualização 3D com rayshader
 create_3d_map <- function(raster_data, title = "3D Elevation Map") {
@@ -468,29 +476,29 @@ create_3d_map <- function(raster_data, title = "3D Elevation Map") {
 }
 ```
 
-### 🎯 Competências Demonstradas
+### 🎯 Competências Demonstradas | Demonstrated Skills
 
-#### Análise Geoespacial
-- ✅ **Operações Espaciais**: Intersecção, união, buffer, dissolve
-- ✅ **Análise de Padrões**: Autocorrelação, clustering, hotspots
-- ✅ **Interpolação**: Kriging, IDW, splines
-- ✅ **Análise de Redes**: Roteamento, análise de acessibilidade
+#### Análise Geoespacial | Geospatial Analysis
+- ✅ **Operações Espaciais**: Intersecção, união, buffer, dissolve | Intersection, union, buffer, dissolve
+- ✅ **Análise de Padrões**: Autocorrelação, clustering, hotspots | Autocorrelation, clustering, hotspots
+- ✅ **Interpolação**: Kriging, IDW, splines | Kriging, IDW, splines
+- ✅ **Análise de Redes**: Roteamento, análise de acessibilidade | Routing, accessibility analysis
 
-#### Visualização de Dados
-- ✅ **Mapas Interativos**: Leaflet, controles dinâmicos
-- ✅ **Cartografia Temática**: Coropléticos, símbolos proporcionais
-- ✅ **Visualização 3D**: Superfícies, modelos de elevação
-- ✅ **Dashboards Geográficos**: Interfaces responsivas
+#### Visualização de Dados | Data Visualization
+- ✅ **Mapas Interativos**: Leaflet, controles dinâmicos | Leaflet, dynamic controls
+- ✅ **Cartografia Temática**: Coropléticos, símbolos proporcionais | Choropleth, proportional symbols
+- ✅ **Visualização 3D**: Superfícies, modelos de elevação | Surfaces, elevation models
+- ✅ **Dashboards Geográficos**: Interfaces responsivas | Responsive interfaces
 
-#### Tecnologias GIS
-- ✅ **Formatos de Dados**: Shapefile, GeoJSON, KML, Raster
-- ✅ **Sistemas de Coordenadas**: Projeções, transformações
-- ✅ **APIs Geográficas**: OpenStreetMap, Google Maps, IBGE
-- ✅ **Banco de Dados Espaciais**: PostGIS, SpatiaLite
+#### Tecnologias GIS | GIS Technologies
+- ✅ **Formatos de Dados**: Shapefile, GeoJSON, KML, Raster | Shapefile, GeoJSON, KML, Raster
+- ✅ **Sistemas de Coordenadas**: Projeções, transformações | Projections, transformations
+- ✅ **APIs Geográficas**: OpenStreetMap, Google Maps, IBGE | OpenStreetMap, Google Maps, IBGE
+- ✅ **Banco de Dados Espaciais**: PostGIS, SpatiaLite | PostGIS, SpatiaLite
 
-### 🚀 Instalação e Configuração
+### 🚀 Instalação e Configuração | Installation and Setup
 
-#### Pré-requisitos do Sistema
+#### Pré-requisitos do Sistema | System Prerequisites
 ```bash
 # Ubuntu/Debian
 sudo apt-get install libgdal-dev libproj-dev libgeos-dev libudunits2-dev
@@ -498,11 +506,10 @@ sudo apt-get install libgdal-dev libproj-dev libgeos-dev libudunits2-dev
 # CentOS/RHEL
 sudo yum install gdal-devel proj-devel geos-devel udunits2-devel
 
-# macOS (com Homebrew)
 brew install gdal proj geos udunits
 ```
 
-#### Instalação de Pacotes R
+#### Instalação de Pacotes R | R Package Installation
 ```r
 # Pacotes principais
 install.packages(c(
@@ -523,7 +530,7 @@ install.packages(c(
 ))
 ```
 
-#### Configuração da Aplicação
+#### Configuração da Aplicação | Application Configuration
 ```r
 # Executar aplicação
 shiny::runApp()
@@ -532,19 +539,19 @@ shiny::runApp()
 shiny::runApp(host = "0.0.0.0", port = 3838)
 ```
 
-### 📈 Métricas de Performance
+### 📈 Métricas de Performance | Performance Metrics
 
-#### Processamento de Dados
-- **Shapefiles**: Até 1M de polígonos
-- **Pontos**: Até 10M de coordenadas
-- **Raster**: Até 10GB de dados
-- **Tempo de Resposta**: < 5 segundos para operações básicas
+#### Processamento de Dados | Data Processing
+- **Shapefiles**: Até 1M de polígonos | Up to 1M polygons
+- **Pontos**: Até 10M de coordenadas | Up to 10M coordinates
+- **Raster**: Até 10GB de dados | Up to 10GB of data
+- **Tempo de Resposta**: < 5 segundos para operações básicas | < 5 seconds for basic operations
 
-#### Visualização
-- **Mapas Interativos**: Renderização em < 2 segundos
-- **Layers Simultâneos**: Até 20 camadas
-- **Zoom Levels**: 1-18 (global para rua)
-- **Formatos Suportados**: 15+ formatos geoespaciais
+#### Visualização | Visualization
+- **Mapas Interativos**: Renderização em < 2 segundos | Interactive maps: Rendering in < 2 seconds
+- **Layers Simultâneos**: Até 20 camadas | Simultaneous layers: Up to 20 layers
+- **Zoom Levels**: 1-18 (global para rua) | 1-18 (global to street)
+- **Formatos Suportados**: 15+ formatos geoespaciais | 15+ supported geospatial formats
 
 ---
 
