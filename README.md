@@ -35,6 +35,23 @@ Aplicação **geoespacial interativa** desenvolvida em R e Shiny, oferecendo fer
 - 📈 **Visualização Avançada**: Mapas coropléticos, heat maps, 3D
 - 📋 **Relatórios Geográficos**: Documentos com mapas e análises
 
+### Pipeline da Aplicação
+
+```mermaid
+flowchart LR
+    A[Dados Geoespaciais\nShapefile / GeoJSON / CSV] --> B[Processamento sf/sp\nProjeções / Transformações]
+    B --> C[Mapas Leaflet\nCoropléticos / Heatmaps]
+    C --> D[Análise Espacial\nMoran's I / Clustering / Kriging]
+    D --> E[Interface Shiny\nDashboard Interativo]
+    E --> F[Usuário\nFiltragem / Exportação]
+
+    subgraph Motor Geoespacial
+        B
+        C
+        D
+    end
+```
+
 ### 🎯 Objetivos da Aplicação
 
 - **Democratizar análises** geoespaciais complexas
@@ -566,6 +583,23 @@ shiny::runApp(host = "0.0.0.0", port = 3838)
 - 🌍 **Geographic Data**: Integration with multiple data sources
 - 📈 **Advanced Visualization**: Choropleth maps, heat maps, 3D
 - 📋 **Geographic Reports**: Documents with maps and analyses
+
+### Application Pipeline
+
+```mermaid
+flowchart LR
+    A[Geospatial Data\nShapefile / GeoJSON / CSV] --> B[sf/sp Processing\nProjections / Transformations]
+    B --> C[Leaflet Maps\nChoropleth / Heatmaps]
+    C --> D[Spatial Analysis\nMoran's I / Clustering / Kriging]
+    D --> E[Shiny UI\nInteractive Dashboard]
+    E --> F[User\nFiltering / Export]
+
+    subgraph Geospatial Engine
+        B
+        C
+        D
+    end
+```
 
 ### 🎯 Application Objectives
 
